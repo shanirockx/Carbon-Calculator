@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon Calculator - Result</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12 m-auto">
+            <h2 class="font-weight-bold display-4">Result</h2>
+            <p class="mb-5">🌱 Check out your carbon footprint for today! 🌍✨</p>
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  Total miles:
+                  <strong id="totalMilesRes" class="d-block"></strong>
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p>
+                  Total CO2:
+                  <strong id="totalEmissionRes" class="d-block"></strong>
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p>
+                  CO2 per mile:
+                  <strong id="totalPerMilesRes" class="d-block"></strong>
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p>
+                  Rating: <strong id="rating" class="d-block"></strong>
+                </p>
+              </div>
+            </div>
+            <p>Advice:</p>
+            <div class="advice" id="advice"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/result.js"></script>
+  </body>
+</html>

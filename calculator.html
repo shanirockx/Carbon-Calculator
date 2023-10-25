@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon Calculator</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="font-weight-bold display-4 mb-3">My footprint today</h2>
+            <form class="cal-form" id="calForm">
+              <select class="form-control" id="transport">
+                <option value="0" selected>Select Transportation</option>
+                <option value="car-gasoline">Car(gasoline)</option>
+                <option value="car-diesel">Car(diesel)</option>
+                <option value="bus">Bus</option>
+                <option value="subway">Subway</option>
+                <option value="walk">Walk</option>
+                <option value="bike">Bike</option>
+                <option value="motorbike">Motorbike</option>
+              </select>
+              <input
+                class="form-control"
+                id="miles"
+                type="text"
+                placeholder="Miles"
+              />
+              <button class="btn btn-primary" type="submit">
+                <span>+</span>
+              </button>
+            </form>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Transportation</th>
+                    <th>Miles</th>
+                    <th>CO<sub>2</sub> Emission (g)</th>
+                  </tr>
+                </thead>
+                <tbody id="displayResult">
+                  <tr>
+                    <td colspan="4" class="text-center">No record found</td>
+                  </tr>
+                </tbody>
+                <tfoot id="totalResult"></tfoot>
+              </table>
+            </div>
+            <div class="row">
+              <div class="col-md-3 m-auto">
+                <button class="btn btn-primary w-100" id="submitReuslt">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
